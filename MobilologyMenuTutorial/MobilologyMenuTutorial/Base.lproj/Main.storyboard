@@ -128,6 +128,7 @@
                         <outlet property="menuContainerView" destination="Nja-My-qyW" id="nsP-WH-Q3u"/>
                         <outlet property="overlayContainerCenterXConstraint" destination="rUM-7x-RRg" id="gdz-VI-vdy"/>
                         <outlet property="overlayContainerView" destination="Zs0-qj-5si" id="PC1-H4-xi8"/>
+                        <outlet property="settingsButton" destination="Sfc-DF-Bau" id="PUu-nH-W7e"/>
                         <outlet property="settingsContainerView" destination="CEf-j0-E2S" id="heU-zc-GSx"/>
                     </connections>
                 </viewController>
