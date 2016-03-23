@@ -284,6 +284,7 @@
 				6D44F8731C9EA6B700E48DF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

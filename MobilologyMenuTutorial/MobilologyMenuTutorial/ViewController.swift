@@ -63,6 +63,8 @@ class ViewController: UIViewController {
   @IBAction func handlePan(recognizer:UIPanGestureRecognizer) {
     let translation = recognizer.translationInView(self.view)
     
+//    print(translation.x)
+    
     if recognizer.state == .Began {
       if isOverlayCentered() {
         
@@ -130,6 +132,22 @@ class ViewController: UIViewController {
     recognizer.setTranslation(CGPointZero, inView: self.view)
   }
   
+//  MARK: - Helper Method(s)
+  
+  func isOverlayCentered () -> Bool {
+    
+    var isOverlayCentered = true
+    
+    if let constraint = overlayContainerCenterXConstraint {
+      
+      if constraint.constant != 0.0 {
+        isOverlayCentered = false
+      }
+    }
+    
+    return isOverlayCentered
+  }
+  
   func ensureCorrectUnderlayWillBeVisible () {
     switch(currentUnderlayType) {
       
@@ -178,20 +196,6 @@ class ViewController: UIViewController {
       break
       
     }
-  }
-  
-  func isOverlayCentered () -> Bool {
-    
-    var isOverlayCentered = true
-    
-    if let constraint = overlayContainerCenterXConstraint {
-      
-      if constraint.constant != 0.0 {
-        isOverlayCentered = false
-      }
-    }
-    
-    return isOverlayCentered
   }
   
   func animateOverlayRight(underlayType:UnderlayType, CompletionHandler completionHandler:CompletionHandler = {}) {
