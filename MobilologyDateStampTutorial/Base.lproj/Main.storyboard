@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,11 +17,40 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rZa-Oc-Abn" userLabel="Red">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="104"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ad0-pf-e3T" userLabel="Blue">
+                                <rect key="frame" x="0.0" y="104" width="600" height="203"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HHK-Sp-SIM" userLabel="Green">
+                                <rect key="frame" x="0.0" y="307" width="600" height="293"/>
+                                <color key="backgroundColor" red="0.27408528539999999" green="1" blue="0.33436468009999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ad0-pf-e3T" firstAttribute="top" secondItem="rZa-Oc-Abn" secondAttribute="bottom" id="1NY-be-Q9q"/>
+                            <constraint firstAttribute="trailing" secondItem="Ad0-pf-e3T" secondAttribute="trailing" id="5VU-CH-ehD"/>
+                            <constraint firstItem="rZa-Oc-Abn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7bz-JF-KgS"/>
+                            <constraint firstItem="Ad0-pf-e3T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Y0O-BT-rx4"/>
+                            <constraint firstItem="HHK-Sp-SIM" firstAttribute="top" secondItem="Ad0-pf-e3T" secondAttribute="bottom" id="fGP-9o-3Ch"/>
+                            <constraint firstAttribute="trailing" secondItem="HHK-Sp-SIM" secondAttribute="trailing" id="g5K-ds-JCi"/>
+                            <constraint firstItem="rZa-Oc-Abn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hi7-uz-2M6"/>
+                            <constraint firstItem="rZa-Oc-Abn" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1739" id="ndM-3M-bI3"/>
+                            <constraint firstItem="HHK-Sp-SIM" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4877" id="tFD-M2-NOC"/>
+                            <constraint firstAttribute="trailing" secondItem="rZa-Oc-Abn" secondAttribute="trailing" id="vpf-q2-3k3"/>
+                            <constraint firstItem="HHK-Sp-SIM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yj1-P2-LZ5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HHK-Sp-SIM" secondAttribute="bottom" id="zwH-x9-4hN"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="332" y="315"/>
         </scene>
     </scenes>
 </document>
