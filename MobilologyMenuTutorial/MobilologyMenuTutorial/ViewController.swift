@@ -70,7 +70,7 @@ class ViewController: UIViewController {
         
         currentUnderlayType = .UnderlayTypeNone
         
-        if translation.x > 0.0 {
+        if translation.x >= 0.0 {
           currentUnderlayType = .UnderlayTypeMenu
         }
         
