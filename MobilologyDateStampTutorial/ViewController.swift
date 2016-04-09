@@ -14,6 +14,16 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
+    
+    let pounds = Double(1 + arc4random_uniform(100))
+    let pence = Double(1 + arc4random_uniform(99))
+    let price = pounds + (pence / 100)
+    
+    persistNewQuote(price)
+    
+    for quote in retrieveQuotes() {
+      print("price [£\(quote.price!)] date_created [\(quote.date_created!)] date_modified [\(quote.date_modified!)]")
+    }
   }
 
   override func didReceiveMemoryWarning() {
@@ -39,6 +49,8 @@ class ViewController: UIViewController {
         appDelegate.saveContext()
       }
     }
+    
+
     
   }
   

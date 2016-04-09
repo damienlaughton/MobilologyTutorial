@@ -122,20 +122,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   //         calls the sign() method to datestamp the object consistently
   @objc private func respondToNSManagedObjectContextWillSaveNotification(note: NSNotification) {
     
-    
-      for object in managedObjectContext.updatedObjects {
-        
-        if let signatureObject = object as? SignatureManagedObject {
-          signatureObject.sign()
-        }
+    for object in managedObjectContext.updatedObjects {
       
-      for object in managedObjectContext.insertedObjects {
-        
-        if let signatureObject = object as? SignatureManagedObject {
-          signatureObject.sign()
-        }
+      if let signatureObject = object as? SignatureManagedObject {
+        signatureObject.sign()
       }
     }
+    
+    for object in managedObjectContext.insertedObjects {
+      
+      if let signatureObject = object as? SignatureManagedObject {
+        signatureObject.sign()
+      }
+    }
+
   }
 }
 
