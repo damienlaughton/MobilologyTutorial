@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D8784901CB92EC900351E6B /* QuoteManagedObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D87848C1CB92EC900351E6B /* QuoteManagedObject+CoreDataProperties.swift */; };
+		6D8784911CB92EC900351E6B /* QuoteManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D87848D1CB92EC900351E6B /* QuoteManagedObject.swift */; };
+		6D8784981CB93BD900351E6B /* SignatureManagedObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8784961CB93BD900351E6B /* SignatureManagedObject+CoreDataProperties.swift */; };
+		6D8784991CB93BD900351E6B /* SignatureManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8784971CB93BD900351E6B /* SignatureManagedObject.swift */; };
+		6D87849B1CB93C6D00351E6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D87849A1CB93C6D00351E6B /* Assets.xcassets */; };
 		6DCFB2F01CB2700000D9A9AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCFB2E51CB2700000D9A9AC /* AppDelegate.swift */; };
 		6DCFB2F61CB2700000D9A9AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCFB2EE1CB2700000D9A9AC /* ViewController.swift */; };
 		6DCFB2F91CB2709900D9A9AC /* MobilologyDateStampTutorial.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6DCFB2F71CB2709900D9A9AC /* MobilologyDateStampTutorial.xcdatamodeld */; };
 		6DCFB2FB1CB2710300D9A9AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DCFB2FA1CB2710200D9A9AC /* Main.storyboard */; };
-		6DCFB2FD1CB2718E00D9A9AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DCFB2FC1CB2718E00D9A9AC /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6D43F5661CAC141C0079819C /* MobilologyDateStampTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobilologyDateStampTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D87848C1CB92EC900351E6B /* QuoteManagedObject+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "QuoteManagedObject+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6D87848D1CB92EC900351E6B /* QuoteManagedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteManagedObject.swift; sourceTree = "<group>"; };
+		6D8784961CB93BD900351E6B /* SignatureManagedObject+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignatureManagedObject+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6D8784971CB93BD900351E6B /* SignatureManagedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureManagedObject.swift; sourceTree = "<group>"; };
+		6D87849A1CB93C6D00351E6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DCFB2E51CB2700000D9A9AC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DCFB2EC1CB2700000D9A9AC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DCFB2EE1CB2700000D9A9AC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6DCFB2F81CB2709900D9A9AC /* MobilologyDateStampTutorial.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MobilologyDateStampTutorial.xcdatamodel; sourceTree = "<group>"; };
 		6DCFB2FA1CB2710200D9A9AC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		6DCFB2FC1CB2718E00D9A9AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,15 +59,27 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		6D8784891CB92EAE00351E6B /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				6DCFB2F71CB2709900D9A9AC /* MobilologyDateStampTutorial.xcdatamodeld */,
+				6D8784961CB93BD900351E6B /* SignatureManagedObject+CoreDataProperties.swift */,
+				6D8784971CB93BD900351E6B /* SignatureManagedObject.swift */,
+				6D87848C1CB92EC900351E6B /* QuoteManagedObject+CoreDataProperties.swift */,
+				6D87848D1CB92EC900351E6B /* QuoteManagedObject.swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
 		6DCFB2EF1CB2700000D9A9AC /* MobilologyDateStampTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				6D8784891CB92EAE00351E6B /* CoreData */,
 				6DCFB2E51CB2700000D9A9AC /* AppDelegate.swift */,
 				6DCFB2EE1CB2700000D9A9AC /* ViewController.swift */,
 				6DCFB2FA1CB2710200D9A9AC /* Main.storyboard */,
-				6DCFB2FC1CB2718E00D9A9AC /* Assets.xcassets */,
+				6D87849A1CB93C6D00351E6B /* Assets.xcassets */,
 				6DCFB2EC1CB2700000D9A9AC /* Info.plist */,
-				6DCFB2F71CB2709900D9A9AC /* MobilologyDateStampTutorial.xcdatamodeld */,
 			);
 			name = MobilologyDateStampTutorial;
 			sourceTree = "<group>";
@@ -122,7 +142,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DCFB2FD1CB2718E00D9A9AC /* Assets.xcassets in Resources */,
+				6D87849B1CB93C6D00351E6B /* Assets.xcassets in Resources */,
 				6DCFB2FB1CB2710300D9A9AC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +155,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DCFB2F61CB2700000D9A9AC /* ViewController.swift in Sources */,
+				6D8784911CB92EC900351E6B /* QuoteManagedObject.swift in Sources */,
 				6DCFB2F01CB2700000D9A9AC /* AppDelegate.swift in Sources */,
+				6D8784981CB93BD900351E6B /* SignatureManagedObject+CoreDataProperties.swift in Sources */,
 				6DCFB2F91CB2709900D9A9AC /* MobilologyDateStampTutorial.xcdatamodeld in Sources */,
+				6D8784901CB92EC900351E6B /* QuoteManagedObject+CoreDataProperties.swift in Sources */,
+				6D8784991CB93BD900351E6B /* SignatureManagedObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

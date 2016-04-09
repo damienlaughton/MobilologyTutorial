@@ -88,6 +88,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       let coordinator = self.persistentStoreCoordinator
       var managedObjectContext = NSManagedObjectContext(concurrencyType: .MainQueueConcurrencyType)
       managedObjectContext.persistentStoreCoordinator = coordinator
+    
+    // During lazy initialisation of the moc add an observer to watch
+    // for the moc being saved
+    NSNotificationCenter.defaultCenter().addObserver(
+      self,
+      selector: #selector(self.respondToNSManagedObjectContextWillSaveNotification),
+      name: NSManagedObjectContextWillSaveNotification,
+      object: nil)
+
+    
       return managedObjectContext
   }()
 
@@ -106,6 +116,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
           }
       }
   }
-
+  
+  // theory: whenever the moc will be saved
+  //         loops through each object which has been changed
+  //         calls the sign() method to datestamp the object consistently
+  @objc private func respondToNSManagedObjectContextWillSaveNotification(note: NSNotification) {
+    
+    
+      for object in managedObjectContext.updatedObjects {
+        
+        if let signatureObject = object as? SignatureManagedObject {
+          signatureObject.sign()
+        }
+      
+      for object in managedObjectContext.insertedObjects {
+        
+        if let signatureObject = object as? SignatureManagedObject {
+          signatureObject.sign()
+        }
+      }
+    }
+  }
 }
 
