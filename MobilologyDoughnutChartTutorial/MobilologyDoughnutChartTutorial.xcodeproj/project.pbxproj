@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D37F3621CC4FBD000B06FA7 /* UIView+cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37F3611CC4FBD000B06FA7 /* UIView+cornerRadius.swift */; };
 		6DD3DF6E1CC4F3A8002E5225 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD3DF6D1CC4F3A8002E5225 /* AppDelegate.swift */; };
 		6DD3DF701CC4F3A8002E5225 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD3DF6F1CC4F3A8002E5225 /* ViewController.swift */; };
 		6DD3DF731CC4F3A8002E5225 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DD3DF711CC4F3A8002E5225 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D37F3611CC4FBD000B06FA7 /* UIView+cornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+cornerRadius.swift"; sourceTree = "<group>"; };
 		6DD3DF6A1CC4F3A8002E5225 /* MobilologyDoughnutChartTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobilologyDoughnutChartTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DD3DF6D1CC4F3A8002E5225 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DD3DF6F1CC4F3A8002E5225 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				6DD3DF741CC4F3A8002E5225 /* Assets.xcassets */,
 				6DD3DF761CC4F3A8002E5225 /* LaunchScreen.storyboard */,
 				6DD3DF791CC4F3A8002E5225 /* Info.plist */,
+				6D37F3611CC4FBD000B06FA7 /* UIView+cornerRadius.swift */,
 			);
 			path = MobilologyDoughnutChartTutorial;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DD3DF801CC4FA26002E5225 /* DoughnutChartView.swift in Sources */,
+				6D37F3621CC4FBD000B06FA7 /* UIView+cornerRadius.swift in Sources */,
 				6DD3DF701CC4F3A8002E5225 /* ViewController.swift in Sources */,
 				6DD3DF6E1CC4F3A8002E5225 /* AppDelegate.swift in Sources */,
 			);
@@ -290,6 +294,7 @@
 				6DD3DF7E1CC4F3A8002E5225 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

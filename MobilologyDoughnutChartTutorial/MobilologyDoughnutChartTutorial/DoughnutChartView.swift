@@ -8,6 +8,6 @@
 
 import UIKit
 
-class DoughnutChartView : UIView {
+@IBDesignable class DoughnutChartView : UIView {
   
 }
