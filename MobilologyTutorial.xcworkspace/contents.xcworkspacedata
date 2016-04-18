@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:MobilologyDoughnutChartTutorial/MobilologyDoughnutChartTutorial.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:MobilologyDateStampTutorial/MobilologyDateStampTutorial.xcodeproj">
    </FileRef>
    <FileRef
